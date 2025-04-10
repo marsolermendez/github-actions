@@ -22,3 +22,5 @@ jobs:
           pip install -r code/python/requirements.txt
       - name: flake8
         run: flake8 code/python
+      - name: bandit
+        run: bandit -r code/python
