@@ -2,8 +2,7 @@ name: First Action - Single
 
 on:
   pull_request:
-    branches:
-      - pull
+    types: [labeled]
 
 jobs: 
   hello-world:
