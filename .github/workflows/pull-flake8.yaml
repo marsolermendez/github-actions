@@ -25,3 +25,5 @@ jobs:
           python -m unittest discover -s code/python -p "*_test.py"
       - name: flake8
         run: flake8 code/python
+      - name: bandit
+        run: bandit -r code/python
