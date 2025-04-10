@@ -13,7 +13,7 @@ jobs:
         run: echo "This is the second step!"
   bye-world:
     runs-on: ubuntu-latest
-    need: hello-world
+    needs: hello-world
     steps:
       - name: First Step
         run: echo "Bye, world!"
